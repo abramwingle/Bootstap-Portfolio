@@ -1,94 +1,219 @@
-<!--This is my portfolio page-->
-
+<!-- This is my contact page -->
 
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href=assets/css/styles.css> <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<title>Abram's Portfolio</title>
+<style>
+  body {
+        background-image: url("../Bootstrap-Portfolio/images/backgroundImage.jpg");
+        border-width: 30px !important;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
 
-<body>
+    h1 {
+        font-family: 'Georgia', Times, Times, serif;
+    }
+    
+
+    
+    .navBarHeader {
+        background-color: #ffffff;
+        }
+
+    a:link { color: #777777; }    
+    a:visited { color: #777777; }
+    a:hover { color: teal; }
+    a:active { color: #666666; }
+           
+
+    .aboutMe {
+        width: 66.66666%;
+        margin-bottom: 100px;
+    }
+
+    .lineBelowAboutMe {
+        border-width: 2px !important;
+    }
+
+    footer {
+        background-color: teal;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #666666;
+        border-top-style: solid;
+        border-color: teal;
+        border-width: 10px; 
+        }
+
+    .navButtons {
+        margin-right: 25% 
+
+    }
+
+.navLogo {
+
+        margin-left:16%;    
+        background-color:teal; 
+        color:white; 
+        width: 22.222%; 
+        min-width:300px
+        }
+
+
+.portfolioBox {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    
+    margin: 10px;
+    width: 250px;
+    height: 180px;
+}
+
+ .box1 a:link, .box2 a:link, .box3 a:link, .box4 a:link, .box5 a:link {
+     color: white;  
+     text-decoration: none;
+ }
+
+ .box1 a:active, .box2 a:active, .box3 a:active, .box4 a:active, .box5 a:active  {
+     color:white;
+     text-decoration: none;
+ }
+
+ .box1 a:visited,  .box2 a:visited,  .box3 a:visited,  .box4 a:visited,  .box5 a:visited {
+    color: beige;
+    text-decoration: none;
+ }
+ .box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover, .box5 a:hover {
+     color: black;
+     text-decoration: underline;
+ }
+
+
+ .box1 {
+    background-image: url("images/box1.jpeg");
+
+ }
+
+ .box2 {
+    background-image: url("images/box2.jpeg");
+ }
+
+ .box3 {
+    background-image: url("images/box3.jpeg");
+ }
+
+ .box4 {
+    background-image: url("images/box4.jpeg");
+ }
+
+ .box5 {
+    background-image: url("images/box5.jpeg");
+ }
+
+.boxBanner1 {
+
+    background-color: teal;
+    color: white;
+    width: 250px;
+    height: 50px;
+    margin-top: 125px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+}
+    </style>
 
 
 
+<title>Contact me</title>
 
-
-    <h1 class="nameTitle">Abram Wingle</h1>
-    <div class="navBar"> </div>
-
-    <div class="navButtons">
-        <a class="button1" href="index.html" target="_blank">About</a>
-        <a class="button2" href="portfolio.html" target="_blank">Portfolio</a>
-        <a class="button3" href="contact.html" target="_blank">Contact</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px;">
+    <a class="navLogo navbar-brand text-center p-2"  style="color:white; height:70px;" href="index.html"><h1><strong>Abram Wingle</strong></h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navButtons navbar-nav ml-auto">
+        <li class="nav-item border-right">
+          <a class="nav-link" href="index.html">About me</a>
+        </li>
+        <li class="nav-item border-right">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
 
+    <!--This says about me but its actually contact, they are sharing-->
+    <div class="aboutMe container bg-white mt-5">
+
+        <h1 class="aboutMeHeader pt-4" style="color:teal; width:275px;">
+            <b>Contact</b>
+         </h1>
+
+        <div class="lineBelowAboutMe border-bottom mb-3 ">&nbsp</div>
 
 
-
-    <div class="aboutMe">
-
-        <h1 class=aboutMeHeader>
-            Portfolio
-        </h1>
-
-        <div class=lineBelowAboutMe>&nbsp</div>
-
-
-        <div class=portfolioBox>
-            <div id=box1>
+        <div class="portfolioBox container-fluid">
+            <div class="box1">
                 <div class=boxBanner1>
                     <a id=boxBannerboe href="portfolio.html">Hangman</a>
                 </div>
             </div>
 
 
-            <div id=box2>
+            <div class="box2">
                 <div class=boxBanner1>
                     <a href="portfolio.html">RPG Games</a>
                 </div>
             </div>
 
 
-            <div id=box3>
+            <div class="box3">
                 <div class=boxBanner1>
                     <a href="portfolio.html">Trivia Game</a>
                 </div>
             </div>
 
 
-            <div id=box4>
+            <div class="box4">
                 <div class=boxBanner1>
                     <a href="portfolio.html">Rutgers Info Widget</a>
                 </div>
             </div>
 
 
-            <div id=box5>
+            <div class="box5">
                 <div class=boxBanner1>
                     <a href="portfolio.html">Rock Paper Scissors</a>
                 </div>
             </div>
 
 
-
-
-        </div>
-
-    </div>
-
-    <div id=footer>
-        &nbsp
-    </div>
-
-
-
+        <footer class="container-fluid p-3">
+            &nbsp
+        </footer>
 </body>
 
 </html>
